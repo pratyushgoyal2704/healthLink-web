@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.loginBox{
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    height: 40vh;
+    width: 50vw;
+    background-color: rgba(200, 200, 200, 0.75);
+    transform: translate3d(-50%, -50%, 0);
+    // box-shadow: 2px 2px 3px red;
+}
+
+.loginBoxMain{
+    width: 70%;
+    height: 100%;
+}
+
+.existingLogin {
+    position: relative;
+    width: 100%;
+    height: 65%;
+    /* background-color: white; */
+}
+
+.existingLogin::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 80%;
+    width: 100%;
+    transform: translate3d(0, -50%, 0);
+    background-color: transparent;
+    border-right: 2px solid #eee;
+}
+
+
+.existingLoginBoxUpper-image{
+    padding: 2rem;
+    display: inline-block;
+}
+
+.existingLoginBoxUpper-heading{
+    color: yellow;
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.existingLoginBoxUpper-image > img {
+    height: 75px;
+}
+
+.existingLogin-Buttons{
+    width: 100%;
+}
+
+
+.existingLoginButton-login{
+    float: right;
+}
+
+.existingLoginButton-register{
+    float: right;
+}
+
+.loginChasis {
+    height: 35%;
+    width: 100%;
+    padding: 0.25rem;
+    overflow: hidden;
+}
+
+.login-github-button{
+    border: none;
+    background: #1a1a1a;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    width: 18rem;
+    height: 3rem;
+    text-align: unset;
+    margin-left: 4rem;
+    border: 1px solid black;
+    border-radius: 0.251rem;
+}
+
+.login-github-button-image-logo{
+    height: 2rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    border-right: 1px solid #777;
+}
+
+
+
+.login-github-button-text{
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.05rem;
+    line-height: 2.9rem;
+    display: inline-block;
+}
+
+.login-github-button-image-branding{
+    height: 2.25rem;
+    transform: translateY(-7%);
+}
+
+.testBox{
+    width: 25vw;
+    height: 25vh;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.masthead {
+    background-color: purple;
+    height: 27vh;
+    width: 100%;
+}
+
+.temp{
+    &-mastheadFit{
+        &-logo{
+            position: absolute;
+            height: 25vh;
+            left: 50vw;
+            top: 27vh;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    }
+}
