@@ -17,6 +17,7 @@ const addFBUser = gql `
 
 export default class FacebookAuth extends Component {
 
+    // Mainintaining state incase of failure
     state = {
         isLoggedIn: false,
         userID: '',
@@ -34,25 +35,17 @@ export default class FacebookAuth extends Component {
         console.log('Facebook login initiated');
     }
 
-    render() {
-        if(this.state.isLoggedIn){
-            return(
-                <div>
-                    Logged In !
-                </div>
-            )
-        }
-        else{  
-            return (
-                <div>
-                    <FacebookLogin
-                        appId="408480956361551"
-                        autoLoad={true}
-                        fields="name,email,picture"
-                        onClick={this.componentClicked}
-                        callback={this.responseFacebook} />
-                </div>
-            )
-        }
+    render() {  
+        return (
+            <div>
+                <FacebookLogin
+                    appId="408480956361551"
+                    autoLoad={true}
+                    fields="name,email,picture"
+                    onClick={this.componentClicked}
+                    callback={this.responseFacebook} />
+                 
+            </div>
+        )
     }
 }
