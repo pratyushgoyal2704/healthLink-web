@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./mergeLater.scss";
-
+import { Link } from "react-router-dom";
 // import manImage from "./img/man.png";
 // import guildImage from "./img/guild.png";
 // import communityImage from "./img/community.png";
@@ -17,16 +17,16 @@ export default class Navbar extends Component {
       <div>
         <div className="navbar">
           <div className="navbar-button navPad">
-            <div>
+            <Link to="/">
               <i className="fas fa-chart-line fa-5x" />
               <div className="navText">DASH</div>
-            </div>
+            </Link>
           </div>
           <div className="navbar-button navPad">
-            <div>
+            <Link to="/guilds">
               <i className="fas fa-users fa-5x" />
               <div className="navText">GUILDS</div>
-            </div>
+            </Link>
           </div>
           <div className="navbar-button navPad">
             <div>
