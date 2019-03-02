@@ -25,9 +25,12 @@ const testStyle = {
 class App extends Component {
   render() {
     return (
-      <div style={testStyle}>
-        <BottomNav />
-      </div>
+      <BrowserRouter>
+        <Route exact path = '/' component = { Home }/>
+        <Route path = '/guild' component = { Guilds }/>
+        <Route path = '/community' component = { Community }/>
+        <Route path = '/report' component = { Report }/>
+      </BrowserRouter>
     );
   }
 }
