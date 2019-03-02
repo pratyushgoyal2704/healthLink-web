@@ -32,7 +32,11 @@ class App extends Component {
     // console.log(this.state);
     return (
       <div style={testStyle}>
-        <NearbyEvents />
+        <Graph
+          chartTitle="Colories vs Days"
+          graphWidth="800px"
+          graphHeight="500px"
+        />
       </div>
     );
   }
