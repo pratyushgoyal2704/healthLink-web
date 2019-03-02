@@ -2,17 +2,24 @@ import React, { Component } from "react";
 import CircularProgressBar from "./CircularProgressBar";
 const statsStyle = {
   padding: "10px",
-  border: "1px solid gray",
+  border: "1px solid rgba(0,0,0,0.161)",
   borderRadius: "5px",
   width: "400px",
-  boxShadow: "0px 0px 10px rgba(0,0,0)"
+  boxShadow: "2px 4px 20px rgba(0, 0, 0, 0.161)",
+  borderRadius: "15px"
 };
 
 const statsTitle = {
-  backgroundColor: "#6FA2FF",
   maxWidth: "250px",
+  borderRadius: "5px",
   color: "white",
-  borderRadius: "5px"
+  background: "linear-gradient(168.44deg, #FFFFFF -146.39%, #00A2FF 141.5%)",
+  textAlign: "center",
+  borderRadius: "15px",
+  padding: "15px",
+  position: "relative",
+  boxShadow: "2px 4px 20px rgba(0, 0, 0, 0.161)",
+  display: "inline-block"
 };
 
 const statsTitleHeading = {
@@ -61,15 +68,17 @@ class Stats extends Component {
           </div>
         </div>
         <div style={statsBasicInfo}>
-          <div>Average Heart Rate : 98</div>
-          <div>Average Calories Lost : 3000 Cal</div>
-          <div>Done better than 90% of your Friends</div>
+          <div>Average Heart Rate : {this.props.avgHeartRate}</div>
+          <div>Average Calories Lost : {this.props.caloriesLost} Cal</div>
+          <div>
+            Done better than {this.props.betterThanPercentage}% of your Friends
+          </div>
         </div>
         <div style={statsActivities}>
-          <div>Running: 1.5 Km</div>
-          <div>Jogging: 2.7 Km</div>
-          <div>Walking: 1.67 Km</div>
-          <div>Steps: 17,764</div>
+          <div>Running: {this.props.runningData} Km</div>
+          <div>Jogging: {this.props.joggingData} Km</div>
+          <div>Walking: {this.props.walkingData} Km</div>
+          <div>Steps: {this.props.totalSteps}</div>
           <button
             style={{
               boxShadow: "0 0 3px black",
@@ -91,7 +100,9 @@ class Stats extends Component {
               style={{ width: " 20px", padding: "5px 5px 5px 25px" }}
             />
           </button>
-          <CircularProgressBar todaysGoalCompletion="75" />
+          <CircularProgressBar
+            todaysGoalCompletion={this.props.todaysGoalCompletion}
+          />
         </div>
         <button
           style={{

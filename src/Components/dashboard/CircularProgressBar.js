@@ -13,7 +13,7 @@ const CircularProgressBar = props => {
   const progressbarText = {
     position: "absolute",
     left: "77%",
-    top: "77%",
+    top: "80%",
     transform: "translate(-50%,-50%)"
   };
   return (
@@ -34,7 +34,7 @@ const CircularProgressBar = props => {
           color: "#FF033F",
           position: "absolute",
           top: "53%",
-          left: "73%",
+          left: "75%",
           textAlign: "center",
           transform: "translate(-50%,-50%)",
           textTransform: "uppercase"

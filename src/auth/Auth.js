@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import AuthChasis from './AuthChasis.js';
+import './auth.css'
 
 export default class Auth extends Component {
 
-
-    
     render() {
         return (
             // <!-- Pane for Existing Users to Login and Handle Options -->

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+table {
+  width: 700px;
+  height: 250px;
+  background-color: #fdecec;
+}
+
+.total-table {
+  width: 700px;
+  height: 30px;
+  border-collapse: collapse;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.darkRed {
+  background-color: #eb5757;
+}
+
+.darkPink {
+  background-color: #fba8a8;
+}
+
+.lightRed {
+  background-color: #ff6d6d;
+}
+
+.darkerPink {
+  background-color: #f48686;
+}
+
+.darkerRed {
+  background-color: #eb5757;
+}
+
+.whiteText {
+  color: #ffffff;
+  font-weight: 350;
+}
+
+td {
+  text-align: center;
+  /* font-weight: 400; */
+  padding: 3px;
+  font-size: 20px;
+}
+
+th {
+  font-weight: 400;
+  padding: 3px;
+  font-size: 20px;
+}
+
+.consumptionBar {
+  background-color: #fdf4f4;
+}
+
+.heading {
+  background-color: #d9a3a3;
+}
+
+.greenRow {
+  background-color: #54d879;
+}
+
+.blueRow {
+  background-color: #44bde3;
+}
+
+.redRow {
+  background-color: #f85050;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.table-main-value {
+  min-width: 5vw;
+}
+
+.table-head-row {
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  /* font-family:  */
+}
+
+.navbar {
+  height: 70vh;
+  width: 7vw;
+  position: absolute;
+  top: 30vh;
+  left: 0;
+}
+
+.navbar-button {
+  text-align: center;
+  width: 7vw;
+  height: 7vw;
+  box-shadow: 0.5px 2px 3px 0px #888888;
+}
+
+.navImg {
+  margin-top: 0.5vh;
+  height: 10vh;
+}
+
+.navText {
+  margin-top: -0.3rem;
+}
+
+.navbar-button:hover {
+  background-color: #fc0ae4;
+}
+
+.navbar-button:hover .navText {
+  color: white;
+}
+
+.navbar-button:hover .fa-users {
+  color: white;
+}
+
+.navbar-button:hover .fa-user-friends {
+  color: white;
+}
+
+.navbar-button:hover .fa-poll {
+  color: white;
+}
+
+.navbar-button:hover .fa-chart-line {
+  color: white;
+}
+
+.navbar-button:hover .fa-desktop {
+  color: white;
+}
+
+.navPad {
+  padding-top: 14px;
+}
