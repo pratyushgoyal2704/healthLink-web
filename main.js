@@ -1,15 +1,14 @@
-import Axios from "axios";
+// import Axios from "axios";
 
-var auth = function(para) {
-    switch (para) {
-        case 'existing':
-            break;
-        case 'github':
-            Axios.    
-    }
-}
+// var auth = function(para) {
+//     switch (para) {
+//         case 'existing':
+//             break;
+//         case 'github':
+//             Axios.
+//     }
+// }
 
+// var startQuery = function() {
 
-var startQuery = function() {
-    
-}
+// }

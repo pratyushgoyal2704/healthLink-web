@@ -8,7 +8,8 @@ import Chart from "./Components/generateHealthReport/Graph";
 // Apollo Setup
 //import ApolloClient from "apollo-boost";
 //import { ApolloProvider } from "react-apollo";
-
+import Box from "./Components/dashboard/Stats";
+import BottomNav from "./Components/mobile/bottomnav";
 // Apollo Setup ( GraphQL Client )
 // const client = new ApolloClient({
 //   uri: "http://localhost:5050/graphql"
@@ -16,7 +17,6 @@ import Chart from "./Components/generateHealthReport/Graph";
 
 // import './Styles/materialize.min.scss'  // Stylesheet (Import only Static Stylesheets here)
 const testStyle = {
-  width: "75%",
   position: "absolute",
   left: "50%",
   top: "50%",
@@ -25,8 +25,8 @@ const testStyle = {
 class App extends Component {
   render() {
     return (
-      <div style={this.testStyle}>
-        <Chart graphTitle="Calories vs Months" graphWidth="" graphHeight="" />
+      <div style={testStyle}>
+        <BottomNav />
       </div>
     );
   }
