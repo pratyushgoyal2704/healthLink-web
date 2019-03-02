@@ -4,7 +4,12 @@ import React, { Component } from "react"; // React and Frameworks
 //import Home from "./Components/Home";
 //import DashBoard from "./Components/DashBoard.js";
 import Chart from "./Components/generateHealthReport/Graph";
-//import SimpleSelect from "./Components/generateHealthReport/Menu";
+import SelectMenu from "./Components/generateHealthReport/Menu";
+import ActionButton from "./Components/generateHealthReport/Button";
+import Graph from "./Components/generateHealthReport/Graph";
+import TaskAlert from "./Components/dashboard/taskAlert";
+import Stats from "./Components/dashboard/stats";
+import NearbyEvents from "./Components/Community/NearbyEvents";
 // Apollo Setup
 //import ApolloClient from "apollo-boost";
 //import { ApolloProvider } from "react-apollo";
@@ -14,9 +19,9 @@ import Chart from "./Components/generateHealthReport/Graph";
 //   uri: "http://localhost:5050/graphql"
 // });
 
-// import './Styles/materialize.min.scss'  // Stylesheet (Import only Static Stylesheets here)
+// import './Styles/materialize.min.scss'  /s/ Stylesheet (Import only Static Stylesheets here)
 const testStyle = {
-  width: "75%",
+  textAlign: "center",
   position: "absolute",
   left: "50%",
   top: "50%",
@@ -24,9 +29,10 @@ const testStyle = {
 };
 class App extends Component {
   render() {
+    // console.log(this.state);
     return (
-      <div style={this.testStyle}>
-        <Chart graphTitle="Calories vs Months" graphWidth="" graphHeight="" />
+      <div style={testStyle}>
+        <NearbyEvents />
       </div>
     );
   }
